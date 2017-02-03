@@ -44,10 +44,10 @@ int updateSprites(sprite* sprites){
 	}
 	sprite* current = sprites;
 	while(current){
-		if(current->vx+current->vy != 0){ //why did i do this? this causes an issue where i cant move diagonally sometimes
+//		if(current->vx+current->vy != 0){ //why did i do this? this causes an issue where i cant move diagonally sometimes
 			current->rendRect->x += current->vx;
 			current->rendRect->y += current->vy;
-		}
+//		}
 		current = current->next;
 	}
 	return 0;
